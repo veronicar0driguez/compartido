@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dot-com bubble/burbuja.com</title>
+
+<script>
+function init() {
+  var arrImages = new Array(3);
+  arrImages[0] = document.getElementById("image1");
+  arrImages[1] = document.getElementById("image2");
+  arrImages[2] = document.getElementById("image3");
+  var objOutput = document.getElementById("output");
+  var strHtml = "<ul>";
+  for (var i = 0; i < arrImages.length; i++) {
+    strHtml += "<li>image" + (i+1) +
+            ": height=" + arrImages[i].height +
+            ", width=" + arrImages[i].width +
+            ", style.height=" + arrImages[i].style.height +
+            ", style.width=" + arrImages[i].style.width +
+            "<\/li>";
+  }
+  strHtml += "<\/ul>";
+  objOutput.innerHTML = strHtml;
+}
+</script>
+
+  </head>
+  <body>
+	<h1>Qué es</h1>
+		<p>Se refiere al crecimiento de los valores entre 1997-2000 de compañías que basan su 				negocio en internet.</p>
+
+	<h1>Causas</h1>
+	<il>
+		<li>Especulación en acciones de empresas tecnológicas, debido a que no se podía determinar 		sus valores de acciones.</li>
+		<li>Las empresas tenían el mismo plan de negocio lo cual provocó cambio de expectativas de 			los inversionistas.</li>
+		<li>Temor de inversionistas por la forma excesiva en que crecieron las acciones.</li>
+	</il>
+
+	<h1>Recomendaciones</h1>
+	<il>
+		<li>Que las empresas tomen en cuenta que la popularidad no equivale a las ganancias.</li>
+		<li>Considerar el nerviosismo de los especuladores.</li>
+		<li>Correlación enbolsa de valores .</li>
+	</il>
+
+	<h2>BOLSA DE VALORES NASDAQ</h2>
+
+	<div class="div1">
+		<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/NYC_-_Midtown_Manhattan_%E2%80%93_Times_Square_		%E2%80%93_Broadway_by_night_-_panoramio_%282%29.jpg/200px-NYC_-_Midtown_Manhattan_%E2%80%93_Times_Square_		%E2%80%93_Broadway_by_night_-_panoramio_%282%29.jpg">
+	</div>
+
+	<footer>Copyright 2019 Web Technologies/ Carolina Rodríguez</footer>
+
+
+<h1>Clase 14 Diciembre DOM</h1>
+
+<p>Image 1: no height, width, or style
+  <img id="image1" src="https://economipedia.com/wp-content/uploads/nasdaq-100.png">
+</p>
+
+<p>Image 2: height="50", width="500", but no style
+  <img id="image2"
+       src="https://economipedia.com/wp-content/uploads/nasdaq-100.png"
+       height="50" width="500">
+</p>
+
+<p>Image 3: no height, width, but style="height: 500px; width: 1000px;"
+  <img id="image3"
+       src="https://economipedia.com/wp-content/uploads/nasdaq-100.png"
+       style="height: 500px; width: 1000px;">
+</p>
+
+<div id="output"> </div>
+
+	
+  </body>
+</html>
