@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="es">
+
+<head>
+<title>Modificación del borde de una imagen</title>
+<script type="text/javascript">
+function setBorderWidth(width) {
+  document.getElementById("img1").style.borderWidth = width + "px";
+}
+</script>
+</head>
+
+<body>
+<h1>WEB OPPORTUNITIES FOR BUSINESS</h1>
+<h1>Definiendo el borde de una imagen</h1>
+<p>
+  <img id="img1" src="https://aussiedailies.com/wp-content/uploads/2018/05/online-business-opportunities.jpg" style="border: 5px solid blue;" width="300"
+height=280" alt="test de borde">
+</p>
+
+<form name="Formulario">
+  <p><input type="button" value="Definir un borde de 25px" 
+onclick="setBorderWidth(25);"> <input type="button" value="Definir un borde de 10px" 
+onclick="setBorderWidth(10);"></p>
+</form>
+
+</body>
+<footer>Copyright 2019 Web Technology</footer>
+</html>
